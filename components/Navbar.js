@@ -38,7 +38,6 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden bg-white px-4 py-4 space-y-3">
           <Link href="/" onClick={toggleMenu} className="block text-gray-700">HOME</Link>
-          <Link href="/shop" onClick={toggleMenu} className="block text-gray-700">SHOP</Link>
           <Link href="/blog" onClick={toggleMenu} className="block text-gray-700">BLOG</Link>
           <Link href="/pages" onClick={toggleMenu} className="block text-gray-700">PAGES</Link>
           <Link href="/contact" onClick={toggleMenu} className="block text-gray-700">CONTACT</Link>
