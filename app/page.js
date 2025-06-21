@@ -157,43 +157,64 @@ const Page = () => {
         </div>
       </section>
 
-      <footer className="text-gray-400 bg-gray-900 body-font">
-        <div className="container px-5 py-16 mx-auto">
-          <div className="flex flex-wrap text-center sm:text-left gap-12 justify-between">
-            <div className="w-full sm:w-auto px-4">
-              <h2 className="title-font font-bold text-white tracking-widest text-3xl mb-3">Kaira</h2>
-              <p className='text-sm'>Gravida massa volutpat aenean odio. Amet, turpis erat nullam fringilla elementum diam in. Nisi, purus vitae, ultrices nunc. Sit ac sit suscipit hendrerit.</p>
-            </div>
-            <div className="w-full sm:w-auto px-4">
-              <h2 className="title-font font-medium text-white tracking-widest text-xl mb-3">Quick Links</h2>
-              <ul className="list-none space-y-2">
-                {['Home', 'About', 'Services', 'Contact'].map((item, i) => (
-                  <li key={i} className="hover:text-white cursor-pointer">{item}</li>
-                ))}
-              </ul>
-            </div>
-            <div className="w-full sm:w-auto px-4">
-              <h2 className="title-font font-medium text-white tracking-widest text-xl mb-3">Help & Info</h2>
-              <ul className="list-none space-y-2">
-                {['Track Your Order', 'Returns + Exchanges', 'Shipping + Delivery', 'Contact Us'].map((item, i) => (
-                  <li key={i} className="hover:text-white cursor-pointer">{item}</li>
-                ))}
-              </ul>
-            </div>
-            <div className="w-full sm:w-auto px-4">
-              <h2 className="title-font font-medium text-white tracking-widest text-xl mb-3">Contact Us</h2>
-              <p className='text-sm'>Do you have any questions or suggestions? contact@yourcompany.com</p>
-              <p className='mt-3 text-sm'>Do you need support? +43 720 11 52 78</p>
-            </div>
-          </div>
-        </div>
-        <div className="bg-gray-800">
-          <div className="container mx-auto py-4 px-6 flex flex-col sm:flex-row justify-between items-center">
-            <p className="text-sm">© 2025 Kaira — <a href="https://twitter.com/knyttneve" className="ml-1 text-gray-500" target="_blank" rel="noopener noreferrer">@Nikunj</a></p>
-            <span className="text-sm mt-2 sm:mt-0">Enamel pin tousled raclette tacos irony</span>
-          </div>
-        </div>
-      </footer>
+     <footer className="bg-gray-900 text-gray-400">
+  <div className="max-w-7xl mx-auto px-6 py-16">
+    <div className="flex flex-wrap justify-between gap-12 text-left">
+
+      {/* Brand Info */}
+      <div className="w-full md:w-1/4">
+        <h2 className="text-white text-3xl font-bold mb-3">Kaira</h2>
+        <p className="text-sm">
+          Gravida massa volutpat aenean odio. Amet, turpis erat nullam fringilla elementum diam in. 
+          Nisi, purus vitae, ultrices nunc. Sit ac sit suscipit hendrerit.
+        </p>
+      </div>
+
+      {/* Quick Links */}
+      <div className="w-full sm:w-1/2 md:w-1/5">
+        <h2 className="text-white text-xl font-medium mb-3">Quick Links</h2>
+        <ul className="space-y-2">
+          <li className="hover:text-white cursor-pointer">Home</li>
+          <li className="hover:text-white cursor-pointer">About</li>
+          <li className="hover:text-white cursor-pointer">Services</li>
+          <li className="hover:text-white cursor-pointer">Contact</li>
+        </ul>
+      </div>
+
+      {/* Help & Info */}
+      <div className="w-full sm:w-1/2 md:w-1/5">
+        <h2 className="text-white text-xl font-medium mb-3">Help & Info</h2>
+        <ul className="space-y-2">
+          <li className="hover:text-white cursor-pointer">Track Your Order</li>
+          <li className="hover:text-white cursor-pointer">Returns + Exchanges</li>
+          <li className="hover:text-white cursor-pointer">Shipping + Delivery</li>
+          <li className="hover:text-white cursor-pointer">Contact Us</li>
+        </ul>
+      </div>
+
+      {/* Contact Info */}
+      <div className="w-full md:w-1/4">
+        <h2 className="text-white text-xl font-medium mb-3">Contact Us</h2>
+        <p className="text-sm mb-2">Have questions or suggestions?<br />contact@yourcompany.com</p>
+        <p className="text-sm">Need support? +43 720 11 52 78</p>
+      </div>
+    </div>
+  </div>
+
+  {/* Bottom Strip */}
+  <div className="bg-gray-800">
+    <div className="max-w-7xl mx-auto py-4 px-6 flex flex-col sm:flex-row justify-between items-center">
+      <p className="text-sm">
+        © 2025 <span className="font-semibold text-white">Kaira</span> — 
+        <a href="https://twitter.com/knyttneve" className="ml-1 hover:underline">@Nikunj</a>
+      </p>
+      <span className="text-sm mt-2 sm:mt-0 text-center sm:text-right">
+        Made with ❤️ by Nikunj
+      </span>
+    </div>
+  </div>
+</footer>
+
     </main>
   );
 };
